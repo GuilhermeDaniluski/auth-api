@@ -1,3 +1,0 @@
-export default {
-    INVALID_CREDENTIALS : 'INVALID_CREDENTIALS'
-}
