@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "es6",
+    "module": "commonjs",
+    "paths": {
+      "*": ["./src/client/*"],
+      "root": ["./src"],
+      "Assets": ["./src/client/assets/"],
+      "Atoms": ["./src/client/atoms/"],
+      "Molecules": ["./src/client/molecules/"],
+      "Organisms": ["./src/client/organisms/"],
+      "Pages": ["./src/client/pages/"],
+      "Styles": ["./src/client/styles/"],
+      "Templates": ["./src/client/templates/"],
+      "Config": ["./src/client/config/"],
+      "Services": ["./src/client/services/"],
+      "Store": ["./src/client/store/"],
+      "Sagas": ["./src/client/sagas/"]
+
+    }
+  }
+}
