@@ -4,7 +4,7 @@
   "description": "Simple ReactJS + ExpressJS + MongoDB server ",
   "main": "src/server/index.js",
   "scripts": {
-    "server": "nodemon src/server/index.js",
+    "server": "nodemon src/index.js",
     "dev": "npm run server"
   },
   "author": "Guilherme Daniluski",
