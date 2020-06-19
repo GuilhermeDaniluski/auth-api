@@ -3,12 +3,15 @@ services:
   mongo:
     container_name: mongo
     image: mongo
+    restart: always
     volumes:
       - ./data:/data/db
+    expose:
+      - 27017
     ports:
-      - "27017:27017"
+      - "127.0.0.1:27017:27017"
     networks:
-      - app-network  
+      - mongo  
   app:
     container_name: app
     restart: always
@@ -21,8 +24,8 @@ services:
       - "mongo"
     command: ["./wait-for-it.sh", "mongo:27017", "--", "node","src/index.js"]
     networks:
-      - app-network  
+      - mongo  
 networks:
-  app-network:
+  mongo:
     driver: bridge
       
